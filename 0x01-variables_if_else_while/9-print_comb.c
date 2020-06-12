@@ -11,8 +11,13 @@ int main(void)
 	while (y <= 57)
 	{
 	putchar(y);
-	putchar(',');
+	if (y == 57)
+	{
+	}
+	else
+	{putchar(',');
 	putchar(' ');
+	}
 	y++;
 	}
 
