@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ * main - Prints 'Holberton' followed by a newline
+ * Uses the _putchar function
  *
- * Return: Always 0.
+ * Return: zero
  */
 int main(void)
 {
