@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
 *print_alphabet - prints the alphabet.
@@ -8,12 +7,12 @@
 void print_alphabet(void)
 {
 
-	int x = 'a';
+	int c = 'a';
 
-	while (x <= 'z')
+	while (c <= 'z')
 	{
-	_putchar(x);
-	x++;
+	_putchar(c);
+	c++;
 	}
-	putchar('\n');
+	_putchar('\n');
 }
