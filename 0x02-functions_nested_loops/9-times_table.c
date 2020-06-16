@@ -24,7 +24,10 @@ void times_table(void)
 			}
 			else
 			{
+				if (h != 0)
+				{
 				_putchar(' ');
+				}
 				_putchar(m + '0');
 			}
 			h++;
