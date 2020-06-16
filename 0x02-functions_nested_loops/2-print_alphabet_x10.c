@@ -1,9 +1,8 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
+ *print_alphabet_x10 - Prints the alphabet 10 times0
  *
- * Return: Always 0.
+ * Return: always 0
  */
 void print_alphabet_x10(void)
 {
@@ -17,7 +16,7 @@ void print_alphabet_x10(void)
 		_putchar(x);
 		x++;
 		}
-		 putchar('\n');
+		_putchar('\n');
 	y++;
 	x = 'a';
 	}
