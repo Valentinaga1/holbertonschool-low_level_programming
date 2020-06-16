@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- *_alphaber - prints de alphabet.
- *@c: is the input character.
+ *print_alphabet - prints de alphabet.
+ *
  * Return: Always 0.
  */
 void print_alphabet(void)
