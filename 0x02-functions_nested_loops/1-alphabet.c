@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
+ *_alphaber - prints de alphabet.
+ *@c: is the input character.
  * Return: Always 0.
  */
 void print_alphabet(void)
