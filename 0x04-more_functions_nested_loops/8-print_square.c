@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
-*print_square - draws a diagonal line on the terminal.
+*print_square - draws an square.
 *@size: size of square.
 */
 void print_square(int size)
