@@ -1,9 +1,6 @@
-#include <stdio.h>
 #include "holberton.h"
 /**
 *print_triangle - draws a triangle.
-*f: fila actual.
-*eb: número de espacios en blanco.
 *@size: size of square.
 */
 void print_triangle(int size)
@@ -12,7 +9,6 @@ void print_triangle(int size)
 
 	if (size > 0)
 	{
-
 		f = 1;
 		while (f <= size)
 		{
