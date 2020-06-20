@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- *main-prints number 01 to 89
+ *main - prints the largest prime factor of the number 612852475143.
  *Return: 0
  */
 
@@ -17,7 +17,7 @@ int main(void)
 		}
 		if (n == 1)
 		{
-			printf("%ld \n", n);
+			printf("%ld\n", f);
 		}
 		f++;
 	}
