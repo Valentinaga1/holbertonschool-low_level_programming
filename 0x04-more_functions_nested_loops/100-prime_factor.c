@@ -15,11 +15,11 @@ int main(void)
 		{
 			n = n / f;
 		}
-		f++;
 		if (n == 1)
 		{
-			printf("%li \n", f);
+			printf("%ld \n", f);
 		}
+		f++;
 	}
 		return (0);
 }
