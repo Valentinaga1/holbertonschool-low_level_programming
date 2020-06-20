@@ -17,7 +17,7 @@ int main(void)
 		}
 		if (n == 1)
 		{
-			printf("%ld \n", f);
+			printf("%ld \n", n);
 		}
 		f++;
 	}
