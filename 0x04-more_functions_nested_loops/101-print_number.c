@@ -6,7 +6,7 @@
 void print_number(int n)
 {
 	char lastDigit;
-	long reversed;
+	int reversed;
 
 if (n < 0)
 {
