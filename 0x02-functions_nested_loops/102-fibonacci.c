@@ -15,10 +15,18 @@ int main(void)
 		while (n < 50)
 		{
 			fn = fn1 + fn2;
-			printf("%ld\n", fn);
-			fn1 = fn2;
-			fn2 = fn;
-			n++;
+			if (n != 49)
+			{
+			printf("%ld, ", fn);
+			}
+			else
+			{
+			printf("%ld\n, ", fn);
+			}
+
+		fn1 = fn2;
+		fn2 = fn;
+		n++;
 		}
 		return (0);
 }
