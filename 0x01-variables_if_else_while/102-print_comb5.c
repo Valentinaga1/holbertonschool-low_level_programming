@@ -17,15 +17,15 @@ int main(void)
 		i2 = i1 + 1;
 		while (i2 <= 99)
 		{
-		i3 = i1 / 10;
-		putchar('0' + i3);
-		i3 = i1 % 10;
-		putchar('0' + i3);
-		putchar(' ');
-		i3 = i2 / 10;
-		putchar('0' + i3);
-		i3 = i2 % 10;
-		putchar('0' + i3);
+			i3 = i1 / 10;
+			putchar('0' + i3);
+			i3 = i1 % 10;
+			putchar('0' + i3);
+			putchar(' ');
+			i3 = i2 / 10;
+			putchar('0' + i3);
+			i3 = i2 % 10;
+			putchar('0' + i3);
 		if (i1  == 98 && i2 == 99)
 		{
 			putchar('\n');
