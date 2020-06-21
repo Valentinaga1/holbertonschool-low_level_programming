@@ -1,43 +1,37 @@
 #include <stdio.h>
-
 /**
- *main-all combo of the two digits 0 and 1
- *no repeats
- *Return: 0
+ * main- all combinations of two two-digit numbers
+ * Return: 0
  */
 
 int main(void)
 {
-	int i;
-	int j;
+	int i, j;
+	int a, b, c, d;
 
-	i = 48;
-	j = 49;
-	while (i < 58)
+	for (i = 0; i < 100; i++)
 	{
-		while (j < 58)
+		a = i / 10;
+		b = i % 10;
+		for (j = 0; j < 100; j++)
 		{
+			c = j / 10;
+			d = j % 10;
 			if (i != j && i < j)
 			{
-				putchar(i);
-				putchar(j);
-				if (i != 56 || j != 57)
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(' ');
+				putchar(c + '0');
+				putchar(d + '0');
+				if (i != 98 || j != 99)
 				{
-					putchar(44);
-					putchar(32);
+					putchar(',');
+					putchar(' ');
 				}
 			}
-			j++;
 		}
-		i++;
-		j = 49;
 	}
 	putchar('\n');
-	return (0);
-}
-
-		i1++;
-	}
-
 	return (0);
 }
