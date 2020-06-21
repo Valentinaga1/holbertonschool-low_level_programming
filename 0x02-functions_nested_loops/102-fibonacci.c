@@ -7,7 +7,7 @@
 int main(void)
 {
 
-	int n = 0;
+	int n = 1;
 	long fn;
 	long fn1 = 0;
 	long fn2 = 1;
@@ -15,6 +15,8 @@ int main(void)
 		while (n < 50)
 		{
 			fn = fn1 + fn2;
+			fn1 = fn2;
+			fn2 = fn;
 			if (n != 49)
 			{
 			printf("%ld, ", fn);
@@ -24,8 +26,7 @@ int main(void)
 			printf("%ld\n, ", fn);
 			}
 
-		fn1 = fn2;
-		fn2 = fn;
+
 		n++;
 		}
 		return (0);
