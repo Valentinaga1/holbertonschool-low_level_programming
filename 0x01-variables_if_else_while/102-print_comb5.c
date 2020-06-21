@@ -1,44 +1,40 @@
 #include <stdio.h>
+
 /**
- * main - prints all possible combinations of two two-digit numbers
- * using putchar
- * Return: Always 0 (Success)
+ *main-all combo of the two digits 0 and 1
+ *no repeats
+ *Return: 0
  */
 
 int main(void)
 {
-	int i1;
-	int i2;
-	int i3;
+	int i;
+	int j;
 
-	i1 = 0;
-	while (i1 <= 99)
+	i = 48;
+	j = 49;
+	while (i < 58)
 	{
-		i2 = i1 + 1;
-		while (i2 <= 99)
+		while (j < 58)
 		{
-			i3 = i1 / 10;
-			putchar('0' + i3);
-			i3 = i1 % 10;
-			putchar('0' + i3);
-			putchar(' ');
-			i3 = i2 / 10;
-			putchar('0' + i3);
-			i3 = i2 % 10;
-			putchar('0' + i3);
-		if (i1  == 98 && i2 == 99)
-		{
-			putchar('\n');
+			if (i != j && i < j)
+			{
+				putchar(i);
+				putchar(j);
+				if (i != 56 || j != 57)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			}
+			j++;
 		}
-		else
-		{
-			putchar(',');
-			putchar(' ');
-		}
-
-		i2++;
-
-		}
+		i++;
+		j = 49;
+	}
+	putchar('\n');
+	return (0);
+}
 
 		i1++;
 	}
