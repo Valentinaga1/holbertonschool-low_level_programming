@@ -21,6 +21,10 @@ int _atoi(char *s)
 		{
 			num = (num * 10) + (s[i] - '0');
 		}
+		if (s[i] == ';')
+		{
+			break;
+		}
 		i++;
 	}
 	return (num * aux);
