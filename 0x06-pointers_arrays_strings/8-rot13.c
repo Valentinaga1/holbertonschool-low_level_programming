@@ -7,20 +7,24 @@
 
 char *rot13(char *s)
 {
-	int i;
+	int i = 0;
 
-	i = 0;
 	while (s[i] != '\0')
 	{
-		if ((s[i] >= 'a' && s[i] <= 'm') || (s[i] >= 'A' && s[i] <= 'M'))
+		while ((s[i] >= 'a' && s[i] <= 'z') ||
+		(s[i] >= 'A' && s[i] <= 'Z'))
 		{
-			s[i] = (s[i] + 13);
-		}
-		else
-			while ((s[i] >= 'n' && s[i] <= 'z') || (s[i] >= 'N' && s[i] <= 'Z'))
+			if ((s[i] >= 'N' && s[i] <= 'Z') ||
+			(s[i] >= 'n' && s[i] <= 'z'))
 			{
-				s[i] = (s[i] - 13);
+				s[i] -= 13;
 			}
+			else
+			{
+				s[i] += 13;
+			}
+			i++;
+		}
 		i++;
 	}
 	return (s);
