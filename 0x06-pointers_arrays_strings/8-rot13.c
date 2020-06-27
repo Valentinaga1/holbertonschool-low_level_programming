@@ -12,15 +12,16 @@ char *rot13(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
-		while ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
+		if ((s[i] >= 'a' && s[i] <= 'm') || (s[i] >= 'A' && s[i] <= 'M'))
 		{
-			if ((s[i] >= 'N' && s[i] <= 'Z') || (s[i] >= 'n' && s[i] <= 'z'))
-				s[i] = (s[i] - 13);
-			else
-				s[i] = (s[i] + 13);
-			i++;
+			s[i] = (s[i] + 13);
 		}
-	i++;
+		else
+			while ((s[i] >= 'n' && s[i] <= 'z') || (s[i] >= 'N' && s[i] <= 'Z'))
+			{
+				s[i] = (s[i] - 13);
+			}
+		i++;
 	}
 	return (s);
 }
