@@ -1,12 +1,15 @@
 #include "holberton.h"
 /**
- * leet -  es a string into 1337.
+ * leet -  encodes a string into 1337.
  * @s: string to code
  * Return: the enconde string.
  */
 char *leet(char *s)
 {
-	int i, j, k;
+	int i;
+	int j;
+	int k;
+
 	char l[] = "oOlLeEaAtT";
 	char e[] = "0011334477";
 
