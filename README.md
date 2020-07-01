@@ -12,7 +12,7 @@ LEARNING C:
 - If, if…else  statements
 - while loop
 
-0x02-functions_nested_loops  and 0x04-more_functions_nested_loops learning objectives:
+0x02, 0x04 -functions_nested_loops  learning objectives:
 - What are nested loops and how to use them.
 - What is a function and how do you use functions.
 - What is a prototype.
@@ -21,6 +21,10 @@ LEARNING C:
 0x03-debugging learning learning objectives:
 - What is debugging? Some methods and error messages.
 
-0x05-pointers_arrays_strings learning objectives:
+0x05, 0x06, 0x07-pointers_arrays_strings learning objectives:
 - What are pointers, arrays, strings and how to use them.
 - Difference between pointers and arrays.
+
+0x08. C - Recursion learning objectives:
+- What is recursion and how to implement it
+- In what situations you should and shouldn't implement recursion
