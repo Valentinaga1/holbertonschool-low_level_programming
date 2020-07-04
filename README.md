@@ -26,5 +26,13 @@ LEARNING C:
 - Difference between pointers and arrays.
 
 0x08. C - Recursion learning objectives:
-- What is recursion and how to implement it
-- In what situations you should and shouldn't implement recursion
+- What is recursion and how to implement it.
+- In what situations you should and shouldn't implement recursion.
+
+0x09. C - Static libraries learning objectives:
+- What is a static library, how does it work, how to create one, and how to use it.
+
+
+0x0A. C - argc, argv learning objectives:
+- How to use arguments passed to your program.
+
