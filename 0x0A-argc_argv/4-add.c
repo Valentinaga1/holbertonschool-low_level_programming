@@ -9,29 +9,25 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
-	int i = 0;
-	int j = 0;
+	int i, j, sum = 0;
 
-	if (argc > 1)
+	i = 1;
+	while (argc > i)
 	{
-		while (argc > i)
+		j = 0;
+		while (argv[i][j] != '\0')
 		{
-			sum = sum + atoi(argv[i]);
-			i++;
-		}
-		printf("%d\n", sum);
-
-		while (isdigit(argv[i][j]) == 0)
-		{
-			printf("Error\n");
-			return (1);
+			if (argv[i][j] < '0' || argv[i][j] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 			j++;
 		}
+		sum = sum + atoi(argv[i]);
+		i++;
 	}
-	else
-	{
-			printf("0\n");
-	}
+	printf("%d\n", sum);
 	return (0);
+
 }
