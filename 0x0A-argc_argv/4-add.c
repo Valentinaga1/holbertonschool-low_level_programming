@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - program that adds positive numbers.
  * @argc: number of arguments.
@@ -9,7 +8,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j, sum = 0;
+	int i;
+	int j;
+	int sum = 0;
 
 	i = 1;
 	while (argc > i)
