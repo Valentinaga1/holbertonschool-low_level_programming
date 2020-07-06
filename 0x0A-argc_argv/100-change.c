@@ -44,7 +44,6 @@ int main(int argc, char *argv[])
 	if (atoi(argv[i]) % 1 >= 0)
 	{
 		cent = cent + (change / 1);
-		change = (atoi(argv[i]) % 1);
 	}
 	printf("%d\n", cent);
 	return (0);
