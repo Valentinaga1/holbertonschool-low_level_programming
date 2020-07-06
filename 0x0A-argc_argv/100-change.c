@@ -29,22 +29,22 @@ int main(int argc, char *argv[])
 	if (change % 10 >= 0)
 	{
 		cent = cent + (change / 10);
-		change = (atoi(argv[i]) % 10);
+		change = (change % 10);
 	}
-	if (atoi(argv[i]) % 5 >= 0)
+	if (change % 5 >= 0)
 	{
 		cent = cent + (change / 5);
-		change = (atoi(argv[i]) % 5);
+		change = (change % 5);
 	}
-	if (atoi(argv[i]) % 2 >= 0)
+	if (change % 2 >= 0)
 	{
 		cent = cent + (change / 2);
-		change = (atoi(argv[i]) % 2);
+		change = (change % 2);
 	}
-	if (atoi(argv[i]) % 1 >= 0)
+	if (change % 1 >= 0)
 	{
 		cent = cent + (change / 1);
 	}
 	printf("%d\n", cent);
 	return (0);
-	}
+}
