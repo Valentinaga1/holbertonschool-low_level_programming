@@ -36,3 +36,8 @@ LEARNING C:
 0x0A. C - argc, argv learning objectives:
 - How to use arguments passed to your program.
 
+0x0B.0x0C. C - Malloc, free learning objectives:
+- What is the difference between automatic and dynamic allocation.
+- How to use the exit function.
+- What are the functions malloc, calloc and realloc from the standard library and how to use them.
+
