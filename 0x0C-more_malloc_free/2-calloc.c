@@ -16,7 +16,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	p = malloc(nmemb * size);
 	if (p == NULL)
 		return (NULL);
-	while (nmemb > i)
+	while ((nmemb * size) > i)
 	{
 		p[i] = '0';
 		i++;
