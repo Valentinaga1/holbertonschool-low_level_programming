@@ -18,6 +18,4 @@ void print_dog(struct dog *d)
 		else
 			printf("Owner: %s\n", d->owner);
 	}
-	else
-		return;
 }
