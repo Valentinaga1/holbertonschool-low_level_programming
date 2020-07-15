@@ -21,8 +21,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 		i = 0;
 		while (i < size)
 		{
-			if (cmp(array[i]) == 1) /* sería esta comparación porque si en las funciones del main de igualdad son iguales retornará true,
-			y cuanodo eso suceda entonces nos dará esa posición donde encuentre la primera comparación que sea true*/
+			if (cmp(array[i]) == 1)
 			{
 				return (i);
 			}
