@@ -32,7 +32,6 @@ LEARNING C:
 0x09. C - Static libraries learning objectives:
 - What is a static library, how does it work, how to create one, and how to use it.
 
-
 0x0A. C - argc, argv learning objectives:
 - How to use arguments passed to your program.
 
@@ -41,3 +40,14 @@ LEARNING C:
 - How to use the exit function.
 - What are the functions malloc, calloc and realloc from the standard library and how to use them.
 
+0x0D. C - Preprocessor learning objectives:
+- What are macros and how to use them.
+- How to include guard your header files.
+
+0x0E. C - Structures, typedef learning objectives:
+- What are structures, when, why and how to use them.
+- How to use typedef.
+
+0x0F. C - Function pointers learning objectives:
+- What are function pointers and how to use them.
+- Where does a function pointer point to in the virtual memory.
