@@ -5,9 +5,10 @@
  * @b: number 2
  * Return: a+b;
  */
-int op_add(int a, int b);
-		return (a + b);
-
+int op_add(int a, int b)
+{
+	return (a + b);
+}
 /**
  * op_sub-substract two numbers
  * @a: number 1
@@ -15,8 +16,9 @@ int op_add(int a, int b);
  * Return: a-b;
  */
 int op_sub(int a, int b)
-		return (a - b);
-
+{
+	return (a - b);
+}
 /**
  * op_mul-divide two numbers
  * @a: number 1
@@ -24,22 +26,26 @@ int op_sub(int a, int b)
  * Return: a*b;
  */
 int op_mul(int a, int b)
+{
 	return (a * b);
-
+}
 /**
  * op_div-gets de module of two numbers
  * @a: number 1
  * @b: number 2
  * Return: a/b;
  */
-int op_div(int a, int b);
+int op_div(int a, int b)
+{
 	return (a / b);
-
+}
 /**
  * op_mod-gets de module of two numbers
  * @a: number 1
  * @b: number 2
  * Return: a%b;
  */
-int op_mod(int a, int b);
+int op_mod(int a, int b)
+{
 	return (a % b);
+}
