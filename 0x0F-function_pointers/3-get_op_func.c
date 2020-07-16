@@ -19,7 +19,7 @@ op_t ops[] = {
 
 	while (i < 5)
 	{
-		if (strcmp(ops[i].op, s) == 0)
+		if (ops[i].op == s)
 			return (ops[i].f);
 		i++;
 	}
