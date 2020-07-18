@@ -19,13 +19,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	while (i < n)
 	{
 		string = va_arg(argumentos, char *);/*este es el incremento por sí solo*/
-		if (separator == NULL)
-			return;
 		if (string == NULL)
-			printf("nil");
-		if (i < n)
+			printf("(nil)")
+		else
 			printf("%s", string);
-		if (i < (n - 1))
+		if (i != (n - 1) && (separator != NULL))
 			printf("%s", separator);
 	i++;
 	}
