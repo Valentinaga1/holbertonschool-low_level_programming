@@ -65,7 +65,7 @@ void print_all(const char * const format, ...)
 	while (format && format[i])
 	{
 		j = 0;
-		while (types[j].tipo != NULL)
+		while ((types[j].tipo) != NULL)
 		{
 			if (format[i] == types[j].tipo[0])
 			{
