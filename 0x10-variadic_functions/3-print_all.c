@@ -32,6 +32,7 @@ void printFloat(va_list args)
 void printString(va_list args)
 {
 	char *cadena;
+	
 	cadena = va_arg(args, char *);
 
 	if (cadena == NULL)
