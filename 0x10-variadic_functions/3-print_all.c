@@ -49,7 +49,6 @@ void printString(va_list args)
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	void (*f)(va_list);
 	int i;
 	char *form = (char *) format;
 	char *separador = "";
