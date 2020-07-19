@@ -64,7 +64,7 @@ void print_all(const char * const format, ...)
 
 	va_start(args, format);
 
-	while (*form != '\0' && format != NULL)
+	while (*form != '\0' && *form != NULL)
 	{
 		i = 0;
 		while (types[i].tipo)
