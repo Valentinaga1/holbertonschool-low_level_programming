@@ -34,12 +34,8 @@ void printString(va_list args)
 	char *cadena;
 
 	cadena = va_arg(args, char *);
-
 	if (cadena == NULL)
-	{
 		printf("nil");
-		return;
-	}
 	printf("%s", cadena);
 }
 /**
@@ -54,7 +50,7 @@ void print_all(const char * const format, ...)
 		{"i", printInteger},
 		{"f", printFloat},
 		{"s", printString},
-		{'\0', '\0'}
+		{NULL, NULL}
 	};
 
 	int i, j;
