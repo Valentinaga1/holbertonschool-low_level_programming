@@ -39,7 +39,6 @@ void printString(va_list args)
 /**
  * print_all - Prints all the types
  * @format: list of types of arguments passed to the function
- *
  */
 void print_all(const char * const format, ...)
 {
