@@ -62,7 +62,7 @@ void print_all(const char * const format, ...)
 	i = 0;
 	separador = "";
 
-	while (format && format[i])
+	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
 		while ((types[j].tipo) != NULL)
