@@ -15,7 +15,7 @@ void printChar(va_list args)
  */
 void printInteger(va_list args)
 {
-	printf("%i", va_arg(args, int));
+	printf("%d", va_arg(args, int));
 }
 /**
  * printFloat - prints a float
@@ -31,7 +31,8 @@ void printFloat(va_list args)
  */
 void printString(va_list args)
 {
-	char *cadena = va_arg(args, char *);
+	char *cadena;
+	cadena = va_arg(args, char *);
 
 	if (cadena == NULL)
 	{
@@ -48,6 +49,7 @@ void printString(va_list args)
 void print_all(const char * const format, ...)
 {
 	va_list args;
+	void (*f)(va_list);
 	int i;
 	char *form = (char *) format;
 	char *separador = "";
@@ -57,7 +59,7 @@ void print_all(const char * const format, ...)
 		{"i", printInteger},
 		{"f", printFloat},
 		{"s", printString},
-		{NULL, NULL}
+		{'\0', '\0'}
 	};
 
 	va_start(args, format);
