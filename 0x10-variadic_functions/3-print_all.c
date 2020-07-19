@@ -49,11 +49,6 @@ void printString(va_list args)
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
-	int i;
-	char *form = (char *) format;
-	char *separador = "";
-
 	Myp types[] = {
 		{"c", printChar},
 		{"i", printInteger},
@@ -62,23 +57,30 @@ void print_all(const char * const format, ...)
 		{'\0', '\0'}
 	};
 
-	va_start(args, format);
+	int i, j;
+	char *separador;
 
-	while (*form != '\0' && *form != NULL)
+	va_list args;
+
+	va_start(args, format);
+	i = 0;
+	separador = "";
+
+	while (format && format[i])
 	{
-		i = 0;
-		while (types[i].tipo)
+		j = 0;
+		while (types[j].tipo != NULL)
 		{
-			if (*form == types[i].tipo[0])
+			if (format[i] == types[j].tipo[0])
 			{
 				printf("%s", separador);
-				types[i].f(args);
+				types[j].f(args);
 				separador = ", ";
 			}
-			i++;
+			j++;
 		}
-		form++;
+		i++;
 	}
-	va_end(args);
 	printf("\n");
+	va_end(args);
 }
