@@ -1,6 +1,4 @@
-#include <stdarg.h>
 #include "variadic_functions.h"
-#include <stdio.h>
 /**
  * printChar - prints a char
  * @args: argument is going to print
@@ -35,7 +33,7 @@ void printString(va_list args)
 
 	cadena = va_arg(args, char *);
 	if (cadena == NULL)
-		printf("nil");
+		cadena = "(nil)";
 	printf("%s", cadena);
 }
 /**
