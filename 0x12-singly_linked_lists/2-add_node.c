@@ -9,7 +9,7 @@
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *new_node;/*1ro Creo el Nodo que voy a agregar al comienzo de la lista*/
+	list_t *new_node;/*1 Creo el Nodo que voy a agregar al comienzo de la lista*/
 	int size = 0;
 
 	new_node = malloc(sizeof(list_t));/*2do es asignarle memoria al*/
