@@ -16,6 +16,8 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		return (NULL);
 	while (posicion < index)
 	{
+		if (head->next == NULL)/*if the node does not exist*/
+			return (NULL);
 		head = head->next;
 		posicion++;
 	}
