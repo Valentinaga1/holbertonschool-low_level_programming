@@ -25,9 +25,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		cur = *head;
 	for (i = 0; i < (index - 1); i++)
 	{
-		cur = cur->next;
 		if (cur->next == NULL)/*verificar que el sgte nodo exista*/
 		return (-1);
+		cur = cur->next;
 	}
 	prev = cur->next;
 	cur->next = prev->next;
