@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  * free_listint2 - function that frees a listint_t list.
  * @head: Pointer to pointer to the first element of a linked list.
