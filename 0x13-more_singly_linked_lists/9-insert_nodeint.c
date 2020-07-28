@@ -33,12 +33,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		if (temp == NULL)
 			return (NULL);
 	}
-	if (temp != NULL)
-	{
 		newNode->next = temp->next;
 		temp->next = newNode;
 		/*Ejm idx 3:temp next apunta a n2 y n2 apunta a newnode y new node apunta*/
 		/*al que era n3*/
-	}
 	return (newNode);
 }
