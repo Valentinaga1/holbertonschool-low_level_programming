@@ -15,4 +15,3 @@ unsigned long int x = 1;
 	*n = *n | x; /*n + 2^index */
 	return (1);
 }
-
