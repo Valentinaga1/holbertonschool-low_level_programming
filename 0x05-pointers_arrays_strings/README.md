@@ -68,6 +68,6 @@ The numbers should be displayed in the same order as they are stored in the arra
 You are allowed to use printf.
 
 ### [9-strcpy.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/9-strcpy.c "9-strcpy.c")
-Function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.  
-__Prototype: char *_strcpy(char *dest, char *src);__  
+Function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.   
+__Prototype: char *_strcpy(char *dest, char *src);__      
 Return value: the pointer to dest.  
