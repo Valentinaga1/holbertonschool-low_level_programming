@@ -27,7 +27,7 @@ About this project:
 
 ### [0-reset_to_98.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/0-reset_to_98.c "0-reset_to_98.c")
 Function that takes a pointer to an int as parameter and updates the value it points to to 98.  
-** Prototype: void reset_to_98(int *n); **
+**Prototype: void reset_to_98(int *n);**   
 
 ### [1-swap.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/1-swap.c "1-swap.c")
 Function that swaps the values of two integers.  
