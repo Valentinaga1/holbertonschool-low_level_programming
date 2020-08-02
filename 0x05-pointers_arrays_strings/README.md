@@ -39,15 +39,15 @@ __Prototype: int _strlen(char *s);__
 
 ### [3-puts.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/3-puts.c "3-puts.c")
 Function that prints a string, followed by a new line, to stdout.  
-__Prototype: void _puts(char *str);__
+__Prototype: void _puts(char *str);__  
 
 ### [4-print_rev.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/4-print_rev.c "4-print_rev.c")
 Function that prints a string, in reverse, followed by a new line.  
-__Prototype: void print_rev(char *s);__
+__Prototype: void print_rev(char *s);__  
 
 ### [5-rev_string.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/5-rev_string.c "5-rev_string.c")
 Function that reverses a string.  
-__Prototype: void rev_string(char *s);__
+__Prototype: void rev_string(char *s);__  
 
 ### [6-puts2.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/6-puts2.c "6-puts2.c")
 Function that prints every other character of a string, starting with the first character, followed by a new line.  
