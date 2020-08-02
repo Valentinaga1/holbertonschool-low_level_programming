@@ -1,5 +1,5 @@
 # LEARNING C:
-	## Here the projects in this repository to learn C and the topics covered by each one:
+ Here the projects in this repository to learn C and the topics covered by each one:
 
 ### 0x00. C-hello_world learning objectives:
 - What is an entry point of a  function, what is main.
