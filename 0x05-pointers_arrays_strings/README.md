@@ -35,11 +35,11 @@ __Prototype: void swap_int(int *a, int *b);__
 
 ### [2-strlen.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/2-strlen.c "2-strlen.c")
 Function that returns the length of a string.  
-_Prototype: int _strlen(char *s);__
+__Prototype: int _strlen(char *s);__
 
 ### [3-puts.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/3-puts.c "3-puts.c")
 Function that prints a string, followed by a new line, to stdout.  
-_Prototype: void _puts(char *str);__
+__Prototype: void _puts(char *str);__
 
 ### [4-print_rev.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x04-more_functions_nested_loops/4-print_rev.c "4-print_rev.c")
 Function that prints a string, in reverse, followed by a new line.  
