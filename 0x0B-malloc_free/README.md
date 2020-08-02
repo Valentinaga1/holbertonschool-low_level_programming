@@ -52,11 +52,11 @@ Each element of the grid should be initialized to 0.
 The function should return NULL on failure.  
 If width or height is 0 or negative, return NULL.  
 
-### [4-free_grid.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x0B-malloc_free/4-free_grid.c  "4-free_grid.c)
+### [4-free_grid.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x0B-malloc_free/4-free_grid.c  "4-free_grid.c")
 Function that frees a 2 dimensional grid previously created by your alloc_grid function.  
 Prototype: void free_grid(int **grid, int height);
 
-### [5-argstostr.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x0B-malloc_free/5-argstostr.c  "5-argstostr.c)
+### [5-argstostr.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x0B-malloc_free/5-argstostr.c  "5-argstostr.c")
 Function that concatenates all the arguments of your program.  
 Prototype: char *argstostr(int ac, char **av);  
 Returns NULL if ac == 0 or av == NULL.  
