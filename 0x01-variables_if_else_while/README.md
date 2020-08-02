@@ -22,7 +22,7 @@ About this project:
 
 ### [0-positive_or_negative.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c "0. Positive anything is better than negative nothing")
 This program will assign a random number to the variable n each time it is executed
-The output of the program should be:
+The output of the program should be:  
 The number, followed by
 - if the number is greater than 0: is positive
 - if the number is 0: is zero
@@ -37,11 +37,11 @@ The string Last digit of, followed by n, followed by the string is, followed by:
 - if the last digit of n is less than 6 and not 0: the string and is less than 6 and not 0
 
 ### [2-print_alphabet.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/2-print_alphabet.c "2-print_alphabet.c")
-Program that prints the alphabet in lowercase, followed by a new line.
+Program that prints the alphabet in lowercase, followed by a new line.  
 You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
 You can only use putchar twice in your code
 
-### [3-print_alphabets.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/3-print_alphabets.c "3-print_alphabets.c)
+### [3-print_alphabets.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x01-variables_if_else_while/3-print_alphabets.c "3-print_alphabets.c")
 Pprogram that prints the alphabet in lowercase, and then in uppercase, followed by a new line.
 You can only use the putchar function (every other function (printf, puts, etc…) is forbidden)
 You can only use putchar three times in your code
