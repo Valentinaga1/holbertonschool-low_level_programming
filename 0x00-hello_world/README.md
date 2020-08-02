@@ -8,10 +8,10 @@ About this project:
 - How to compile using gcc
 
 ## Requirements
-Allowed editors: vi, vim, emacs
-All your files will be compiled on Ubuntu 14.04 LTS using gcc 4.8.4
-You are not allowed to use system
-Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+	Allowed editors: vi, vim, emacs
+	All your files will be compiled on Ubuntu 14.04 LTS using gcc 4.8.4
+	You are not allowed to use system
+	Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
 
 ## File Descriptions
 
