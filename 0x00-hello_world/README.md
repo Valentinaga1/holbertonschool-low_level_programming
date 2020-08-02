@@ -1,15 +1,17 @@
 # 0x00. C - Hello, World
 
+About this project:
+
 - What is main
 - How to print text using printf, puts and putchar
 - How to get the size of a specific type using the unary operator sizeof
 - How to compile using gcc
 
 ## Requirements
-- Allowed editors: vi, vim, emacs
-- All your files will be compiled on Ubuntu 14.04 LTS using gcc 4.8.4
-- You are not allowed to use system
-- Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
+Allowed editors: vi, vim, emacs
+All your files will be compiled on Ubuntu 14.04 LTS using gcc 4.8.4
+You are not allowed to use system
+Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
 
 ## File Descriptions
 
