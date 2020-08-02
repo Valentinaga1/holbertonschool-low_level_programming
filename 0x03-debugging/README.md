@@ -14,10 +14,10 @@ About this project:
 
 ## File Descriptions
 
-### Mandatory
-
 ### [holberton.h](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x03-debugging/holberton.h "holberton.h")
 HOLBERTON HEADER
+
+### Mandatory
 
 ### [0-main.c](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x03-debugging/0-main.c "0-main.c")
 You are not coding the solution / function, you’re just testing it! 
