@@ -61,9 +61,9 @@
  How to make our own printf function.
 
  ###0x12. C, 0x11. C - Singly linked lists learning objectives:
- - When and why using linked lists vs arrays
- - How to build and use linked lists
+ - When and why using linked lists vs arrays.
+ - How to build and use linked lists.
  
  ###0x14. C - Bit manipulation learning objectives:
- - Look for the right source of information without too much help
- - How to manipulate bits and use bitwise operators
+ - Look for the right source of information without too much help.
+ - How to manipulate bits and use bitwise operators.
