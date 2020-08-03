@@ -9,8 +9,8 @@
 ### [0x01-variables_if_else_while](https://github.com/Valentinaga1/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while "0x01-variables_if_else_while")
 - Integers.
 - Arithmetic Operators, Relational operators, Logical operators.
-- If, if…else  statements
-- while loop
+- If, if…else  statements.
+- while loop.
 
 ### [0x02-functions_nested_loops](https://github.com/Valentinaga1/holbertonschool-low_level_programming/tree/master/0x02-functions_nested_loops "0x02-functions_nested_loops"), [0x04-more_functions_nested_loops](https://github.com/Valentinaga1/holbertonschool-low_level_programming/tree/master/0x04-more_functions_nested_loops "0x04-more_functions_nested_loops")
 - What are nested loops and how to use them.
