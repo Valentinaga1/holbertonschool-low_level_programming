@@ -1,11 +1,4 @@
 #include "holberton.h"
-
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
-
-#include <stdio.h>
-#include <stdlib.h>
 /**
  * read_textfile - Function that reads a text file and prints it to the POSIX
  * standard output
@@ -27,17 +20,26 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	od = open(filename,  O_RDONLY);
 	if (od == -1)
+	{
+		free(buffer);
 		return (0);
+	}
 
 	rd = read(od, buffer, letters);
 	if (rd == -1)
+	{
+		free(buffer);
 		return (0);
+	}
+
 	wd = write(1, buffer, rd);
 	if (wd == -1)
+		{
+		free(buffer);
 		return (0);
-
-	free(buffer);
+	}
 	close(od);
+	free(buffer);
 
 	return (wd);
 }
