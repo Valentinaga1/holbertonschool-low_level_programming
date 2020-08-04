@@ -13,26 +13,29 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename == NULL)
 		return (0);
+	/*to read*/
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
 		return (0);
-
+	/*abro el file*/
 	fd = open(filename, O_RDONLY);
-	if (fd == -1)
+	if (fd == -1)/*verifico */
 	{
-		free(buffer);
+		free(buffer);/*Libero en caso tal*/
 		return (0);
 	}
+	/*lo leo*/
 	rd = read(fd, buffer, letters);
-	if (rd == -1)
+	if (rd == -1)/*verifico */
 	{
-		free(buffer);
+		free(buffer);/*Libero en caso tal*/
 		return (0);
 	}
+	/*lo escribo*/
 	wd = write(STDOUT_FILENO, buffer, rd);
-	if (wd == -1)
+	if (wd == -1)/*verifico */
 	{
-		free(buffer);
+		free(buffer);/*Libero en caso tal*/
 		return (0);
 	}
 	close(fd);
