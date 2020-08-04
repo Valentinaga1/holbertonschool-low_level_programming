@@ -6,7 +6,6 @@
 
 #include <unistd.h>
 #include <stdio.h>
-#include <stdlib.h>
 /**
  * read_textfile - Function that reads a text file and prints it to the POSIX
  * standard output
