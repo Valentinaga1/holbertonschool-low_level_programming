@@ -8,7 +8,7 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int od, rd, wd;
+	int od = 0, rd = 0, wd = 0;
 	char *buffer;
 
 	if (filename == NULL)
@@ -34,12 +34,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	wd = write(1, buffer, rd);
 	if (wd == -1)
-		{
+	{
 		free(buffer);
 		return (0);
 	}
 	close(od);
 	free(buffer);
-
 	return (wd);
 }
