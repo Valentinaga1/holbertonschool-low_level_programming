@@ -18,11 +18,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int od, rd, wd;
 	char *buffer;
 
+	if (filename == NULL)
+	return (0);
+
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
-		return (0);
-
-	if (filename == NULL)
 		return (0);
 
 	od = open(filename,  O_RDONLY);
@@ -33,7 +33,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (rd == -1)
 		return (0);
 
-	wd = write(1, buffer, rd);
+	wd = write(STDOUT_FILENO, buffer, rd);
 	if (wd == -1)
 		return (0);
 
