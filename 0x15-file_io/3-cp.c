@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	/*While porque vamosa leer cada 1024b y desde que haya algo para(>0) leer*/
 	/*luego escribimos*/
-		while ((rd = read(file_f, buffer, 1024)) > 0)
+		while ((rd = read(file_f, buffer, 1024)) != '\0')
 		{
 			if (rd == -1)
 			{
