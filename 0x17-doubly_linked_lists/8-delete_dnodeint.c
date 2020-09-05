@@ -16,7 +16,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	temp = *head;
 	if (index == 0)/*si index = 0 1er nodo*/
 	{
-		if(temp->next != NULL)
+		if (temp->next != NULL)
 		{
 			(*head) = (*head)->next;/*la cabeza apunta al segundo nodo*/
 			(*head)->prev = NULL;/*se desconecta del nodo prev*/
@@ -34,10 +34,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		temp = temp->next;
 		posicion++;
 	}
-	if(temp->next == NULL)
+	if (temp->next == NULL)
 		return (-1);
-	else
-		temp->next->prev = temp->prev;
+	temp->next->prev = temp->prev;
 	temp->prev->next = temp->next;
 	free(temp);
 	return (1);
