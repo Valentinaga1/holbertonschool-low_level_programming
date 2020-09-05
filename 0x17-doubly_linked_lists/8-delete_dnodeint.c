@@ -16,13 +16,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	temp = *head;
 	if (index == 0)/*si index = 0 1er nodo*/
 	{
-		if(temp->next != NULL)
-			temp->next->prev = NULL;
-		(*head) = (*head)->next;
-		free(temp);
+		if (temp->next != NULL)/*verifico que el prox nodo exista*/
+			temp->next->prev = NULL;/*desconcecto el 2 del nodo prev apunt a null*/
+		(*head) = (*head)->next;/*conecto head con el prox apuntando al 2do nodo*/
+		free(temp);/*elimino el 1er nodo*/
 		return (1);
 	}
-	while((temp != NULL) && (posicion < index))
+	while ((temp != NULL) && (posicion < index))
 	{
 		temp = temp->next;
 		posicion++;
