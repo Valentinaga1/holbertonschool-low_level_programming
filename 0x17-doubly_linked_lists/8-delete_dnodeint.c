@@ -29,11 +29,13 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		}
 		return (1);
 	}
-	while (posicion < index && temp->next != NULL)
+	while (posicion < index && temp != NULL)
 	{
 		temp = temp->next;
 		posicion++;
 	}
+	if (temp == NULL)
+		return (-1);
 	if (temp->next == NULL)
 		return (-1);
 	temp->next->prev = temp->prev;
