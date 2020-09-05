@@ -17,19 +17,12 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	if (index == 0)/*si index = 0 1er nodo*/
 	{
 		if (temp->next != NULL)
-		{
-			*head = (*head)->next;/*la cabeza apunta al segundo nodo*/
 			(*head)->prev = NULL;/*se desconecta del nodo prev*/
-			free(temp);/*se elimina el primer nodo*/
-		}
-		else
-		{
-			*head = NULL;
-			free(temp);
-		}
+		*head = (*head)->next;/*la cabeza apunta al segundo nodo*/
+		free(temp);/*se elimina el primer nodo*/
 		return (1);
 	}
-	while ((temp != NULL) && (posicion < index ))
+	while ((temp != NULL) && (posicion < index))
 	{
 		temp = temp->next;
 		posicion++;
