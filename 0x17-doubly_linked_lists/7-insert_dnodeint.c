@@ -18,11 +18,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new_node->n = n;/*Asigno data al nuevo nodo*/
 	if (idx == 0)/*si index 0, agrego nodo al inicio*/
 	{
-		new_node->next = *h;
-		new_node->prev = NULL;
+		new_node->next = *h;/*el sgte sería el head*/
+		new_node->prev = NULL;/*el prev sería null, porq es el 1er nodo*/
 		if (*h != NULL)
 			(*h)->prev = new_node;
-		*h = new_node;
+		*h = new_node;/*head se vuelve el 1er nodo*/
 		return (new_node);
 	}
 	temp = *h;
