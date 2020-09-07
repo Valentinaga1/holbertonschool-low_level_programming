@@ -19,8 +19,8 @@
 
 ## File Descriptions
 
-### [holberton.h](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x17-doubly_linked_lists/holberton.h "holberton.h")
-## HOLBERTON HEADER
+### [lists.h](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x17-doubly_linked_lists/lists.h"hlists.h")
+## LISTS HEADER
 
 ### Mandatory
 
