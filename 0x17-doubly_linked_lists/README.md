@@ -19,7 +19,7 @@
 
 ## File Descriptions
 
-### [lists.h](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x17-doubly_linked_lists/lists.h"lists.h")
+### [lists.h](https://github.com/Valentinaga1/holbertonschool-low_level_programming/blob/master/0x17-doubly_linked_lists/lists.h "lists.h")
 ## LISTS HEADER
 
 ### Mandatory
