@@ -10,21 +10,22 @@ hash_table_t *hash_table_create(unsigned long int size)
 	hash_table_t *new_ht;
 
 	if (!size)
-		return (0);
+		return (NULL);
 	/*cuanod creamos la tabla no sabemos cuanta dta tiene, pero cuando*/
 	/*creamos el array ya sabemos*/
 	new_ht = malloc(sizeof(hash_table_t));
 	if (!new_ht)
-		return (0);
+		return (NULL);
 	new_ht->size = size;
 
 	/*es más optimo que usar malloc, porque necesitaríamos un for para*/
 	/*iniciliazar */
-	new_ht->array = calloc(size, sizeof(hash_node_t *));
+	new_ht->array = calloc(sizeof(hash_node_t *), size);
 	if (!new_ht->array)
 	{
 		free(new_ht);
 		return (NULL);
 	}
+
 	return (new_ht);
 }
