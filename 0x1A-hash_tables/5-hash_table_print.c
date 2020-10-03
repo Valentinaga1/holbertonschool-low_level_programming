@@ -9,13 +9,12 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned int long i;
 	hash_node_t *temp;
 
-	if(ht == NULL)
+	if (ht == NULL)
 		return;
 	i = 0;
 	printf("%c", '{');
 	while (i < ht->size)
 	{
-		
 		temp = ht->array[i];
 		while (temp != NULL)
 		{
