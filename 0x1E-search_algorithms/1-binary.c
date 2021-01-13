@@ -9,26 +9,33 @@
  * Return: Always EXIT_SUCCESS
  */
 
- int binary_search(int *array, size_t size, int value){
+ int binary_search(int *array, size_t size, int value)
+ {
+	int low = 0;
+	int high = size - 1;
+	int mid, i;
+
 	if (array == NULL)
 		return(-1);
-	return (binarySearch(array, value, 0, size - 1));
- }
 
- int binarySearch(int array[], int x, int low, int high) {
-  // Repeat until the pointers low and high meet each other
-  while (low <= high) {
-    int mid = low + (high - low) / 2;
+	while (low <= high) {
+		printf("Searching in array: ");
 
-    if (array[mid] == x)
-      return mid;
+		for(i= low; i <= high; i++)
+			printf("%d, ", array[i]);
+		printf("\n");
 
-    if (array[mid] < x)
-      low = mid + 1;
+		mid = (high + low) / 2;
 
-    else
-      high = mid - 1;
-  }
+		if (array[mid] == value)
+			return mid;
 
-  return -1;
+		if (array[mid] < value)
+			low = mid + 1;
+
+		else
+			high = mid - 1;
+	}
+
+	return -1;
  }
